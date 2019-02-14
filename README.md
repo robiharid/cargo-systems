@@ -1,10 +1,12 @@
 # cargo-systems
 
 > Simple cargo ship visualisation web app
+> ![cargo-systems table screenshot](https://cdn.pbrd.co/images/I1bMzUO.png)
+> ![cargo-systems ship screenshot](https://cdn.pbrd.co/images/I1bOjG2.png)
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 npm install
 
@@ -18,4 +20,5 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+This Vue app fetches data from an external API using the axios module,
+displays the fetched data on a table, each row is clickable and uses the Vue router to render dynamic data.
