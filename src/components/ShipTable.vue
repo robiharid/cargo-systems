@@ -58,20 +58,7 @@ export default {
 
         return ship;
       });
-
-      // (First implementation)
-      // Iterate through array in place, calculate regex match of owner string
-      // to test if it has (location), add the origin property to the ship
-      // for (let i = 0; i < this.ships.length; i++) {
-      //   let origin = this.ships[i].owner;
-      //   const originResult = /\(([^)]+)\)/.exec(origin);
-      //   if (originResult === null) {
-      //     origin = "Unknown";
-      //   } else {
-      //     origin = originResult[1];
-      //   }
-      //   this.ships[i].origin = origin;
-      // }
+      
     },
     viewShip(ship) {
       this.$router.push("/ship/" + ship.id)
